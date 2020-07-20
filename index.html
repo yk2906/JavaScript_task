@@ -19,7 +19,6 @@
 				height: 100%;
 				z-index: 1;
 				box-sizing: border-box;
-				transition: 2s;
 			}
 
 			#button {
@@ -35,7 +34,7 @@
 				text-align: center;
 			}
 			#popup {
-				background-color:white;
+				background-color: white;
 				height: 400px;
 				width: 500px;
 				padding: 30px;
@@ -46,10 +45,11 @@
 				left: 0;
 				right: 0;
 				bottom: 50px;
-				/* opacity: .1; */
+				opacity: 0;
 				box-sizing: border-box;
 				display: none;
 				z-index: 4;
+				transition: 2s;
 			}
 			#cover {
 				background-color: #000;
@@ -71,10 +71,12 @@
 
 			#popup.popup-open {
 				display: block;
+				opacity: .9;
 			}
 			#cover.popup-open {
         display: block;
 			}
+
 		</style>
 </head>
 <body>
